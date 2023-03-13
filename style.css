@@ -26,6 +26,7 @@ nav a:hover::after {
 
 body {
   margin: 0;
+  margin-top: 70px;
   box-shadow: none; /* remove shadow on body element */
 }
 
@@ -37,12 +38,22 @@ header {
 
 nav {
   display: flex;
+  background-color: white;
   flex-wrap: wrap;
+  position: fixed;
+  top: 0;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   margin: 0;
+  z-index: 999;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* add shadow only at the bottom of nav element */
+}
+
+@media screen and (min-width: 750px) {
+  nav {
+    padding: 0px 20px;
+  }
 }
 
 /*Header Splash Styling*/
@@ -121,5 +132,51 @@ nav {
   }
   100% {
     opacity: 1;
+  }
+}
+
+
+/* Projects Section*/
+
+.project-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px 50px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card button {
+  background-color: rgb(0, 157, 255);
+  padding: 10px 10px;
+  margin: 10px 100px;
+  border-radius: 20px;
+  border: 2px solid rgb(0, 157, 255);
+}
+
+.card button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 750px) {
+  .project-cards {
+    flex-direction: row;
   }
 }
