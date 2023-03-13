@@ -98,19 +98,19 @@ nav {
 
 /* about */
 
-.about {
+#about {
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
 @media screen and (min-width: 750px) {
-  .about {
+  #about {
     margin: auto 200px;
   }
 }
 
-.about p::after {
+#about p::after {
   content: '';
   display: inline-block;
   width: 2px;
@@ -135,12 +135,22 @@ nav {
   }
 }
 
+/* skills secction */
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 
 /* Projects Section*/
 
 .project-cards {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .card {
@@ -179,4 +189,15 @@ nav {
   .project-cards {
     flex-direction: row;
   }
+}
+
+foot {
+  display: flex;
+  background-color: #333;
+  width: 100%;
+  padding: 25px;
+}
+
+#contact p {
+  color: white;
 }
