@@ -30,6 +30,12 @@ body {
   box-shadow: none; /* remove shadow on body element */
 }
 
+hr {
+  border: none;
+  border-top: 1px solid black;
+  margin: 20px 75px;
+}
+
 header {
   width: 100%;
   margin: 0;
@@ -61,6 +67,7 @@ nav {
 .header-splash {
   display: flex;
   justify-content: center;
+  text-align: center;
   box-shadow: none;
   margin: 100px 0px;
 }
@@ -149,6 +156,10 @@ nav {
   text-align: center;
 }
 
+.skill-imgs {
+  display: flex;
+  justify-content: center;
+}
 
 /* Projects Section*/
 
