@@ -12,3 +12,4 @@ function typeWriter() {
 }
 
 typeWriter();
+

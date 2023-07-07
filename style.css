@@ -4,6 +4,9 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+a {
+  text-decoration: none;
+}
 nav a {
   position: relative;
   text-decoration: none;
@@ -52,7 +55,7 @@ nav {
   align-items: center;
   width: 100%;
   margin: 0;
-  z-index: 999;
+  z-index: 98;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* add shadow only at the bottom of nav element */
 }
 
@@ -217,3 +220,6 @@ foot {
 #contact p {
   color: white;
 }
+
+
+/* background */
