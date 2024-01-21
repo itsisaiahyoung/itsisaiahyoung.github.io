@@ -1,87 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" type="text/css" rel="stylesheet"/>
-  <title>Isaiah Young</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Young Media</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <h1>Isaiah Young</h1>
-      </div>
-  
-      <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand"><h1>Isaiah Young</h1></a>
+
+        <button type="button" class="btn btn-primary nav-button">Contact Me</button>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarnav" aria-controls="navbarnav" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarnav">
+            <button type="button" class="close nav-close-button" data-toggle="collapse" data-target="#navbarnav">
+                <span>&times;</span>
+            </button>
+            <div class="navbar-nav">
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Contact</a>
+            </div>
+        </div>
     </nav>
 
-
-    <div class="header-splash">
-      <div class="header-text">
-        <h1>Isaiah Young</h1>
-        <hr>
-        <h2>Fullstack Developer</h2>
-      </div>
-      <img src="imgs/isaiahprofile.jpg"></img>
-    </div>
-  </header>
-  <main>
-    <div id="about">
-        <p id="about-p"></p>
-    </div>
-
-
-    <div id="skills">
-      <h2>Skills</h2>
-      <div class="skill-imgs">
-        <img src="imgs/programming-lang.png" width="200" />
-        <img src="imgs/react.png" width="85"/>
-      </div>
-    </div>
-
-
-    <div id="projects">
-      <div class="project-cards">
-        <div class="card">
-          <p>This is a project of mine</p>
-          <h2>Workout Tracker</h2>
-          <button><a href="https://github.com/itsisaiahyoung/workouttracker" target="_blank">Github</a></button>
+    <main>
+        <div class="video-header">
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="./public/video/youngmediabelltech.mp4" type="video/mp4">
+            </video>
         </div>
-        <div class="card">
-          <p>This is a project of mine</p>
-          <h2>Spotify Playlist Manager</h2>
-          <button><a href="https://github.com/itsisaiahyoung/Jammming" target="_blank">Github</a></button>
+    </main>
+
+    <div
+        class="container"
+    >
+        <div class="row mid-page-row">
+            <div class="col-md-6">
+                <h1 class="display-4">Young Media</h1>
+                <p class="lead">We are a company that provides services in the area of ​​digital marketing, web development and graphic design.</p>
+                <button type="button" class="btn btn-primary">Learn More</button>
+            </div>
+            <div class="col-md-6">
+                <img src="./public/imgs/LogoBlack.png" width="100%"></img>
+            </div>
         </div>
-        <div class="card">
-          <p>This is a project of mine</p>
-          <h2>Stopwatch</h2>
-          <button>Github</button>
-        </div>
-
-
-
-      </div>
-
-
-
     </div>
-
     
-  </main>
 
-  <foot>
-    <div id="contact">
-      <p>Contact me: contactisaiahyoung@gmail.com</p>
-    </div>
-  </foot>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <script src="app.js"></script>
 </body>
 </html>
