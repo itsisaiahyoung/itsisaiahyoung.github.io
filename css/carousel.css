@@ -1,0 +1,17 @@
+.card-deck {
+    flex-direction: row;
+    flex-wrap: nowrap; /* add this line */
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+}
+
+.card-deck::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari and Opera */
+}
+
+.card-deck .card {
+    flex: 0 0 30%; /* adjust this value to change the card width */
+    max-width: 30%; /* should match the above value */
+    margin: 0 10px; /* add some horizontal margin */
+}
