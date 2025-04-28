@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Videos - Isaiah Young</title>
+    <!-- Add Tailwind config for custom orange accent -->
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'accent': {
+              DEFAULT: '#F97316', // Orange 500
+              'light': '#FB923C', // Orange 400
+              'dark': '#EA580C', // Orange 600
+              'lighter': '#FED7AA', // Orange 200
+              'darker': '#9A3412' // Orange 800
+            }
+          }
+        }
+      }
+    }
+    </script>
+</head>
+<body class="bg-black text-gray-200 font-sans">
+    <!-- Full Page White Grid Overlay -->
+    <div class="fixed inset-0 z-0 pointer-events-none" style="--grid-size: 50px; --grid-color: rgba(255,255,255,0.15); background-image: repeating-linear-gradient(to right, var(--grid-color) 0, var(--grid-color) 1px, transparent 1px, transparent var(--grid-size)), repeating-linear-gradient(to bottom, var(--grid-color) 0, var(--grid-color) 1px, transparent 1px, transparent var(--grid-size)); background-size: var(--grid-size) var(--grid-size);"></div>
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content Area with Padding Top -->
+    <main class="max-w-6xl mx-auto mt-16 px-4 pt-20"> <!-- Added pt-20 -->
+        <h1 class="text-4xl font-bold text-center text-white mb-12 tracking-tight">My Videos</h1>
+
+        <!-- Video Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Video Card 1 -->
+            <a href="https://www.youtube.com/watch?v=M9HIbfCcm1k" target="_blank" rel="noopener noreferrer" 
+               class="group block bg-neutral-800 rounded-lg overflow-hidden border border-gray-700 hover:border-accent/50 transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-accent/20">
+                <div class="relative aspect-w-16 aspect-h-9 bg-neutral-700">
+                    <img src="https://img.youtube.com/vi/M9HIbfCcm1k/hqdefault.jpg" alt="Video Thumbnail" 
+                         class="w-full h-full object-cover group-hover:opacity-80 transition-opacity">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-white opacity-80" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-semibold text-gray-100 text-lg mb-1 group-hover:text-accent transition-colors">Why New Multiplayer Games Are FAILING...</h3>
+                    <p class="text-gray-400 text-sm">Exploring the challenges facing new multiplayer game launches and market saturation.</p>
+                    <div class="text-xs text-gray-500 mt-3">Published: Feb 15, 2024</div>
+                </div>
+            </a>
+
+             <!-- Video Card 2 -->
+            <a href="https://www.youtube.com/watch?v=m17F1Pwtz7s" target="_blank" rel="noopener noreferrer" 
+               class="group block bg-neutral-800 rounded-lg overflow-hidden border border-gray-700 hover:border-accent/50 transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-accent/20">
+                <div class="relative aspect-w-16 aspect-h-9 bg-neutral-700">
+                    <img src="https://img.youtube.com/vi/m17F1Pwtz7s/hqdefault.jpg" alt="Video Thumbnail" 
+                         class="w-full h-full object-cover group-hover:opacity-80 transition-opacity">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                         <svg class="w-12 h-12 text-white opacity-80" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-semibold text-gray-100 text-lg mb-1 group-hover:text-accent transition-colors">Apple Vision Pro In Combat - The Future Is Here</h3>
+                    <p class="text-gray-400 text-sm">A speculative look at the potential military applications of the Apple Vision Pro headset.</p>
+                    <div class="text-xs text-gray-500 mt-3">Published: Jan 30, 2024</div>
+                        </div>
+                    </a>
+                    
+            <!-- Video Card 3 (Placeholder) -->
+            <a href="#" target="_blank" rel="noopener noreferrer" 
+               class="group block bg-neutral-800 rounded-lg overflow-hidden border border-gray-700 hover:border-accent/50 transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-accent/20">
+                <div class="relative aspect-w-16 aspect-h-9 bg-neutral-700">
+                    <img src="./public/imgs/unrealengine1.png" alt="Video Thumbnail" 
+                         class="w-full h-full object-cover group-hover:opacity-80 transition-opacity">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                         <svg class="w-12 h-12 text-white opacity-80" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                            </div>
+                        </div>
+                <div class="p-5">
+                    <h3 class="font-semibold text-gray-100 text-lg mb-1 group-hover:text-accent transition-colors">Intro to Unreal Engine 5 Materials</h3>
+                    <p class="text-gray-400 text-sm">A beginner's guide to creating and customizing materials in Unreal Engine 5.</p>
+                    <div class="text-xs text-gray-500 mt-3">Published: Dec 10, 2023</div>
+                </div>
+            </a>
+
+            <!-- Video Card 4 (Placeholder) -->
+             <a href="#" target="_blank" rel="noopener noreferrer" 
+               class="group block bg-neutral-800 rounded-lg overflow-hidden border border-gray-700 hover:border-accent/50 transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-accent/20">
+                <div class="relative aspect-w-16 aspect-h-9 bg-neutral-700">
+                    <img src="./public/imgs/vscodedev.PNG" alt="Video Thumbnail" 
+                         class="w-full h-full object-cover group-hover:opacity-80 transition-opacity">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                         <svg class="w-12 h-12 text-white opacity-80" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-semibold text-gray-100 text-lg mb-1 group-hover:text-accent transition-colors">Tailwind CSS Crash Course</h3>
+                    <p class="text-gray-400 text-sm">Learn the basics of Tailwind CSS and rapidly build modern UIs.</p>
+                    <div class="text-xs text-gray-500 mt-3">Published: Nov 05, 2023</div>
+                </div>
+            </a>
+
+             <!-- Add more video cards as needed -->
+
+        </div>
+
+        <!-- Pagination (Optional) -->
+        <div class="mt-12 text-center">
+            <nav class="inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+                <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-700 bg-neutral-800 text-sm font-medium text-gray-400 hover:bg-neutral-700">
+                    <span class="sr-only">Previous</span>
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                <!-- Current: "z-10 bg-accent border-accent text-white", Default: "bg-neutral-800 border-gray-700 text-gray-400 hover:bg-neutral-700" -->
+                <a href="#" aria-current="page" class="z-10 relative inline-flex items-center px-4 py-2 border border-accent bg-accent text-sm font-medium text-white">
+                    1
+                </a>
+                <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-700 bg-neutral-800 text-sm font-medium text-gray-400 hover:bg-neutral-700">
+                    2
+                </a>
+                <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-700 bg-neutral-800 text-sm font-medium text-gray-400 hover:bg-neutral-700">
+                    3
+                </a>
+                <span class="relative inline-flex items-center px-4 py-2 border border-gray-700 bg-neutral-800 text-sm font-medium text-gray-500">
+                    ...
+                </span>
+                <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-700 bg-neutral-800 text-sm font-medium text-gray-400 hover:bg-neutral-700">
+                    8
+                </a>
+                <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-700 bg-neutral-800 text-sm font-medium text-gray-400 hover:bg-neutral-700">
+                    <span class="sr-only">Next</span>
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+            </nav>
+        </div>
+
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Script to load header and footer -->
+    <script src="/js/main.js"></script>
+</body>
+</html> 

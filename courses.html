@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Courses - Isaiah Young</title>
+    <!-- Add Tailwind config for custom orange accent -->
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'accent': {
+              DEFAULT: '#F97316', // Orange 500
+              'light': '#FB923C', // Orange 400
+              'dark': '#EA580C', // Orange 600
+              'lighter': '#FED7AA', // Orange 200
+              'darker': '#9A3412' // Orange 800
+            }
+          }
+        }
+      }
+    }
+    </script>
+</head>
+<body class="bg-black text-gray-200 font-sans">
+    <!-- Full Page White Grid Overlay -->
+    <div class="fixed inset-0 z-0 pointer-events-none" style="--grid-size: 50px; --grid-color: rgba(255,255,255,0.15); background-image: repeating-linear-gradient(to right, var(--grid-color) 0, var(--grid-color) 1px, transparent 1px, transparent var(--grid-size)), repeating-linear-gradient(to bottom, var(--grid-color) 0, var(--grid-color) 1px, transparent 1px, transparent var(--grid-size)); background-size: var(--grid-size) var(--grid-size);"></div>
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content Area with Padding Top -->
+    <main class="max-w-6xl mx-auto mt-16 px-4 pt-20">
+        <h1 class="text-4xl font-bold text-center text-white mb-12 tracking-tight">Courses</h1>
+
+        <!-- Course Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            
+            <!-- Course Card 1: TikTok -->
+            <div class="bg-neutral-800 rounded-lg shadow-xl overflow-hidden border border-gray-700 hover:border-accent/40 transition-all duration-300 flex flex-col transform hover:scale-103">
+                <div class="relative">
+                    <img class="h-64 w-full object-cover" src="public/imgs/tiktoklive.png" alt="TikTok Growth Course">
+                    <div class="absolute top-0 right-0 bg-accent text-white py-1.5 px-4 m-4 rounded-lg text-sm font-bold shadow-md">$79</div>
+                    <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent w-full p-4">
+                        <h3 class="font-bold text-white text-2xl">TikTok Growth Masterclass</h3>
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="flex items-center mb-3 text-sm">
+                        <div class="flex text-yellow-400 mr-2">
+                            <!-- Star icons -->
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> 
+                        </div>
+                        <span class="text-gray-400">4.7 (198 reviews)</span>
+                    </div>
+                    <p class="text-gray-300 mb-5 flex-grow leading-relaxed">Unlock explosive growth on TikTok. Master the algorithm, create viral content, and build a dedicated following. Includes strategies for monetization and brand building.</p>
+                    <div class="flex items-center text-gray-400 text-sm mb-5">
+                        <svg class="w-5 h-5 mr-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Approx. 15 hours of video content</span>
+                    </div>
+                    <ul class="text-sm text-gray-300 space-y-2 mb-6 flex-grow">
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Understanding the TikTok Algorithm</li>
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Content Creation & Virality Techniques</li>
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Monetization and Brand Deals</li>
+                    </ul>
+                    <div class="mt-auto">
+                        <a href="#" class="block w-full bg-accent hover:bg-accent-dark text-white text-center font-bold py-3 px-4 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 transform hover:-translate-y-1">
+                            Learn More & Enroll
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Course Card 2: YouTube -->
+             <div class="bg-neutral-800 rounded-lg shadow-xl overflow-hidden border border-gray-700 hover:border-accent/40 transition-all duration-300 flex flex-col transform hover:scale-103">
+                <div class="relative">
+                    <img class="h-64 w-full object-cover" src="public/imgs/youtubeviews.jpg" alt="YouTube Success Course">
+                    <div class="absolute top-0 right-0 bg-accent text-white py-1.5 px-4 m-4 rounded-lg text-sm font-bold shadow-md">$129</div>
+                     <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent w-full p-4">
+                        <h3 class="font-bold text-white text-2xl">YouTube Success Blueprint</h3>
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="flex items-center mb-3 text-sm">
+                         <div class="flex text-yellow-400 mr-2">
+                            <!-- Star icons -->
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <span class="text-gray-400">4.2 (112 reviews)</span>
+                    </div>
+                    <p class="text-gray-300 mb-5 flex-grow leading-relaxed">Build and grow a thriving YouTube channel from the ground up. Learn video production, SEO optimization, audience engagement, and effective monetization techniques.</p>
+                    <div class="flex items-center text-gray-400 text-sm mb-5">
+                        <svg class="w-5 h-5 mr-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Approx. 25 hours of video content</span>
+                    </div>
+                     <ul class="text-sm text-gray-300 space-y-2 mb-6 flex-grow">
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Channel Setup & Branding</li>
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Video Production & Editing Workflow</li>
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>YouTube SEO and Audience Growth</li>
+                    </ul>
+                    <div class="mt-auto">
+                        <a href="#" class="block w-full bg-accent hover:bg-accent-dark text-white text-center font-bold py-3 px-4 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 transform hover:-translate-y-1">
+                            Learn More & Enroll
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more course cards as needed -->
+
+        </div>
+
+        <!-- Optional: Section for Upcoming Courses -->
+        <section class="mt-20 text-center">
+            <h2 class="text-3xl font-semibold text-white mb-6">Coming Soon</h2>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">I'm always working on new content. Keep an eye out for upcoming courses on advanced web development topics and digital marketing deep dives!</p>
+             <div class="inline-block bg-neutral-800 p-6 rounded-lg shadow-lg border border-gray-700">
+                 <p class="text-lg text-accent font-semibold">Stay tuned for more!</p>
+             </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Script to load header and footer -->
+    <script src="/js/main.js"></script>
+</body>
+</html> 

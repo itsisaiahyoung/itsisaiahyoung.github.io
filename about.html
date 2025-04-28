@@ -30,114 +30,118 @@
     </script>
 </head>
 <body class="bg-black text-gray-200 font-sans">
+    <!-- Full Page White Grid Overlay -->
+    <div class="fixed inset-0 z-0 pointer-events-none" style="--grid-size: 50px; --grid-color: rgba(255,255,255,0.15); background-image: repeating-linear-gradient(to right, var(--grid-color) 0, var(--grid-color) 1px, transparent 1px, transparent var(--grid-size)), repeating-linear-gradient(to bottom, var(--grid-color) 0, var(--grid-color) 1px, transparent 1px, transparent var(--grid-size)); background-size: var(--grid-size) var(--grid-size);"></div>
 
-    <!-- Navbar -->
-    <nav class="bg-black bg-opacity-50 backdrop-filter backdrop-blur-sm shadow-md sticky top-0 z-50"> <!-- Sticky Translucent Navbar -->
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between">
-                <!-- Logo -->
-                <div class="flex space-x-4">
-                    <div>
-                        <a href="index.html" class="flex items-center py-5 px-2 text-gray-200 hover:text-white">
-                           <svg class="h-6 w-6 mr-1 text-accent-light" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                            </svg>
-                            <span class="font-bold text-white">IY</span>
-                        </a>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content Area with Padding Top -->
+    <main class="max-w-6xl mx-auto mt-16 px-4 pt-20"> <!-- Added pt-20 -->
+        <!-- About Section -->
+        <section id="about" class="mb-16 scroll-mt-16 bg-neutral-900 p-8 md:p-12 rounded-xl shadow-2xl border border-accent/20" style="box-shadow: 0 0 25px rgba(249, 115, 22, 0.15), 0 0 10px rgba(249, 115, 22, 0.1) inset;">
+            <h2 class="text-4xl font-bold text-center text-white mb-10 tracking-tight">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Image -->
+                <div class="md:w-1/3 flex-shrink-0">
+                    <div class="relative w-full max-w-xs mx-auto rounded-lg overflow-hidden shadow-lg border-2 border-accent/30">
+                        <img src="public/imgs/seaside.jpeg" alt="Isaiah Young" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                     </div>
                 </div>
-
-                <!-- Primary Nav -->
-                <div class="hidden md:flex items-center space-x-1">
-                    <a href="index.html" class="py-5 px-3 text-gray-200 hover:text-white">Home</a>
-                    <a href="about.html" class="py-5 px-3 text-accent-light font-semibold">About</a> <!-- Highlight current page -->
-                    <a href="blog.html" class="py-5 px-3 text-gray-200 hover:text-white">Blog</a>
-                    <a href="contact.html" class="py-5 px-3 text-gray-200 hover:text-white">Contact</a>
-                </div>
-
-                <!-- Secondary Nav -->
-                <div class="hidden md:flex items-center space-x-1">
-                     <a href="contact.html" class="py-2 px-3 bg-accent hover:bg-accent-dark text-white rounded transition duration-300">Contact Me</a>
-                </div>
-
-                <!-- Mobile button -->
-                <div class="md:hidden flex items-center">
-                    <button class="mobile-menu-button text-gray-200 hover:text-white">
-                         <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                        </svg>
-                    </button>
+                <!-- Text Content -->
+                <div class="md:w-2/3 text-gray-300 space-y-5 leading-relaxed">
+                    <h3 class="text-2xl font-semibold text-white mb-3">Hi, I'm <span class="text-accent">Isaiah Young</span></h3>
+                    <p>
+                        I'm a passionate creator navigating the exciting intersection of technology, entrepreneurship, and marketing. My journey started with a deep curiosity about how things work, evolving from tinkering with computers to building software and understanding the strategies that drive business growth.
+                    </p>
+                    <p>
+                        Whether it's developing sleek web applications, exploring the possibilities of game development in Unreal Engine, or crafting digital marketing campaigns that resonate, I thrive on bringing ideas to life. I believe in the power of combining technical skill with creative vision to build impactful solutions.
+                    </p>
+                    <p>
+                        My background includes hands-on experience in full-stack development, leveraging modern frameworks and tools to create efficient and user-friendly digital experiences. I'm also deeply interested in the startup ecosystem, constantly exploring new business models and growth hacking techniques.
+                    </p>
+                    <p>
+                        Beyond the code and strategy, I'm committed to continuous learning and sharing knowledge. This portfolio is a glimpse into my work, projects, and the insights I've gathered along the way. Let's connect and explore how we can build something amazing together!
+                    </p>
+                     <a href="/contact.html" class="inline-block mt-4 bg-accent hover:bg-accent-dark text-white font-bold py-2 px-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 transform hover:-translate-y-1">
+                        Get In Touch
+                    </a>
                 </div>
             </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-16 scroll-mt-16">
+            <h2 class="text-3xl font-semibold text-center text-white mb-10">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <!-- Skill Card 1 -->
+                <div class="bg-neutral-800 p-6 rounded-lg shadow-lg border border-gray-700 hover:border-accent/40 transition duration-300 transform hover:-translate-y-1">
+                    <svg class="w-12 h-12 mx-auto mb-3 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    <h4 class="font-semibold text-white text-lg mb-1">Web Development</h4>
+                    <p class="text-gray-400 text-sm">HTML, CSS, JavaScript, React, Node.js, Tailwind</p>
+                </div>
+                 <!-- Skill Card 2 -->
+                <div class="bg-neutral-800 p-6 rounded-lg shadow-lg border border-gray-700 hover:border-accent/40 transition duration-300 transform hover:-translate-y-1">
+                     <svg class="w-12 h-12 mx-auto mb-3 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <h4 class="font-semibold text-white text-lg mb-1">Game Development</h4>
+                    <p class="text-gray-400 text-sm">Unreal Engine 5, Blueprints, C++ Basics</p>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="bg-neutral-800 p-6 rounded-lg shadow-lg border border-gray-700 hover:border-accent/40 transition duration-300 transform hover:-translate-y-1">
+                    <svg class="w-12 h-12 mx-auto mb-3 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 .01.01M16 8l4 4-3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h4 class="font-semibold text-white text-lg mb-1">Digital Marketing</h4>
+                    <p class="text-gray-400 text-sm">SEO, Content Creation, Social Media Strategy</p>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="bg-neutral-800 p-6 rounded-lg shadow-lg border border-gray-700 hover:border-accent/40 transition duration-300 transform hover:-translate-y-1">
+                     <svg class="w-12 h-12 mx-auto mb-3 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <h4 class="font-semibold text-white text-lg mb-1">Entrepreneurship</h4>
+                    <p class="text-gray-400 text-sm">Startups, Business Models, Growth Hacking</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Journey Section -->
+        <section id="journey" class="mb-16 scroll-mt-16">
+            <h2 class="text-3xl font-semibold text-center text-white mb-10">My Journey</h2>
+            <div class="relative pl-8 border-l-2 border-accent/30">
+                <!-- Timeline Item 1 -->
+                <div class="mb-10 ml-6 bg-neutral-800 p-6 rounded-lg shadow-md border border-gray-700 relative">
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-accent rounded-full -left-11 ring-4 ring-neutral-900">
+                        <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                    </span>
+                    <h3 class="flex items-center mb-1 text-lg font-semibold text-white">Early Explorations <span class="bg-accent/20 text-accent text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3">Beginnings</span></h3>
+                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400">2015 - 2018</time>
+                    <p class="text-gray-300 text-sm">First sparked interest in computers and basic programming. Started learning HTML/CSS and simple game modifications.</p>
         </div>
+                <!-- Timeline Item 2 -->
+                 <div class="mb-10 ml-6 bg-neutral-800 p-6 rounded-lg shadow-md border border-gray-700 relative">
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-accent rounded-full -left-11 ring-4 ring-neutral-900">
+                         <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.998.998 0 01.056.242l-2.5 4a1 1 0 001.388 1.388l4-2.5a.998.998 0 01.242.056L12 13l7-3.182V7a1 1 0 00-.22-.606l-3-4a1 1 0 00-.976-.394v0zM12 8.536L9 6.982V12.018L12 10.464V8.536z"/></svg>
+                    </span>
+                    <h3 class="flex items-center mb-1 text-lg font-semibold text-white">Diving Deeper <span class="bg-accent/20 text-accent text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3">Skill Building</span></h3>
+                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400">2019 - 2022</time>
+                    <p class="text-gray-300 text-sm">Focused on full-stack web development (MERN stack), UI/UX principles, and began exploring Unreal Engine for game development projects.</p>
+                </div>
+                <!-- Timeline Item 3 -->
+                 <div class="mb-10 ml-6 bg-neutral-800 p-6 rounded-lg shadow-md border border-gray-700 relative">
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-accent rounded-full -left-11 ring-4 ring-neutral-900">
+                         <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path></svg>
+                    </span>
+                    <h3 class="flex items-center mb-1 text-lg font-semibold text-white">Entrepreneurial Ventures <span class="bg-accent/20 text-accent text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3">Growth</span></h3>
+                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400">2023 - Present</time>
+                    <p class="text-gray-300 text-sm">Launched several personal projects, started freelance consulting, and delved into digital marketing strategies to grow online presence and client businesses.</p>
+                </div>
+            </div>
+        </section>
 
-        <!-- Mobile Menu -->
-        <div class="mobile-menu hidden md:hidden bg-black bg-opacity-90 backdrop-filter backdrop-blur-sm">
-             <a href="index.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">Home</a>
-             <a href="about.html" class="block py-2 px-4 text-sm text-accent-light font-semibold hover:bg-gray-700">About</a> <!-- Highlight current page -->
-             <a href="blog.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">Blog</a>
-             <a href="contact.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">Contact</a>
-             <a href="contact.html" class="block py-2 px-4 text-sm bg-accent hover:bg-accent-dark text-white">Contact Me</a>
-        </div>
-    </nav>
-
-    <!-- Main Content Area -->
-    <main class="max-w-4xl mx-auto mt-8 px-4">
-        <div class="bg-neutral-800 p-8 rounded-lg shadow-lg mb-8">
-            <h1 class="text-3xl font-semibold text-gray-100 mb-6 text-center">About Me</h1>
-
-            <!-- Placeholder Content -->
-            <div class="flex flex-col md:flex-row items-center mb-8">
-                 <div class="md:w-1/3 mb-4 md:mb-0 md:pr-6 text-center">
-                     <img src="./public/imgs/isaiahprofile.jpg" alt="Isaiah Young" class="rounded-full shadow-lg mx-auto w-48 h-48 object-cover border-4 border-neutral-600">
-                 </div>
-                 <div class="md:w-2/3 text-gray-300 leading-relaxed">
-                     <p class="mb-4">A developer based out of Vancouver Island, passionate about creating innovative solutions and engaging digital experiences.</p>
-                     <p class="mb-4"></p>
-                     <p></p>
-                 </div>
-             </div>
-
-             <hr class="my-8 border-neutral-600">
-
-             <h2 class="text-2xl font-semibold text-gray-100 mb-4 text-center">My Skills</h2>
-             <div class="flex flex-wrap justify-center gap-4 text-center">
-                  <!-- Skill Tag Colors for contrast on dark card -->
-                 <span class="bg-blue-200 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">HTML</span>
-                 <span class="bg-gray-300 text-gray-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">CSS</span>
-                 <span class="bg-green-200 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">JavaScript</span>
-                 <span class="bg-yellow-200 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">React</span>
-                 <span class="bg-indigo-200 text-indigo-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">Unreal Engine</span>
-                 <span class="bg-purple-200 text-purple-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">C++</span>
-                 <span class="bg-pink-200 text-pink-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">Tailwind CSS</span>
-                 <span class="bg-orange-200 text-orange-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">Web Design</span> 
-             </div>
-        </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-black text-gray-500 py-8 mt-12 border-t border-white border-opacity-10">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <p>&copy; 2024 Isaiah Young. All rights reserved.</p>
-             <!-- Add social links or other footer content here -->
-        </div>
-    </footer>
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
 
-    <!-- Scripts -->
-    <!-- Remove Bootstrap JS dependencies -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script> -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-
-    <!-- Simple Mobile Menu Toggle Script -->
-     <script>
-        const btn = document.querySelector('button.mobile-menu-button');
-        const menu = document.querySelector('.mobile-menu');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-    </script>
-
+    <!-- Script to load header and footer -->
+    <script src="/js/main.js"></script>
 </body>
 </html>
